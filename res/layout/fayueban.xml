@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/HuangSe"
+    android:orientation="vertical" >
+
+    <!-- 顶栏布局 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#01B6BD" >
+
+        <TextView
+            android:id="@+id/quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fifteenDP"
+            android:padding="@dimen/sevenDP"
+            android:text="@string/quxiao"
+            android:textColor="@drawable/text_while"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fayueban"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/fasong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fifteenDP"
+            android:src="@drawable/fasong"
+            android:textColor="@drawable/text_while" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#ffffff" >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fifteenDP"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:hint="@string/kuaifayuebanba"
+            android:textColor="#838383"
+            android:textSize="@dimen/fourteenDP" />
+    </LinearLayout>
+    <!-- 添加按钮 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:background="#ffffff" >
+
+        <GridView
+            android:id="@+id/noScrollgridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dingwei"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/didian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fifteenDP"
+            android:text="@string/didian"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fifteenDP"
+            android:padding="@dimen/fourteenDP"
+            android:src="@drawable/qianjin" />
+    </RelativeLayout>
+    <!-- 出发时间  集合地点 -->
+
+   
+        <RelativeLayout
+            android:background="#ffffff"
+              android:layout_marginTop="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+         >
+
+            <ImageView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/twentyDP"
+                android:src="@drawable/time" />
+
+            <TextView
+                android:id="@+id/chufashijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@id/time"
+                android:text="@string/chufashijian"
+                android:textColor="#383838"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/chufashijian"
+                android:textColor="#383838"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+      
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+           >
+
+            <ImageView
+                android:id="@+id/jihe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/twentyDP"
+                android:src="@drawable/didian" />
+
+            <TextView
+                android:id="@+id/jihedidian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@id/jihe"
+                android:text="@string/jihedidian"
+                android:textColor="#383838"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/jihedidian"
+                android:background="@null"
+                android:hint="请输入地点"
+                android:textColor="@drawable/text_while"
+                android:textSize="14sp" />
+        </RelativeLayout>
+   
+    <!-- 必带物品 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/wupin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/twentyDP"
+            android:src="@drawable/wupin" />
+
+        <TextView
+            android:id="@+id/bidaiwuping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fifteenDP"
+            android:layout_toEndOf="@id/wupin"
+            android:text="@string/bidaiwupin"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/bidaiwuping"
+            android:background="@null"
+            android:hint="请输入地点"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <!-- 旅行资金 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/zijin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/twentyDP"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/zijin" />
+
+        <TextView
+            android:id="@+id/lvxingzijin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/zijin"
+            android:text="@string/lvxingzijin"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+
+        <EditText
+            android:inputType="number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/lvxingzijin"
+            android:background="@null"
+            android:hint="请输入地点"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

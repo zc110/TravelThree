@@ -7,6 +7,7 @@ import adapter.MyDongtaiAdapter;
 import adapter.MyYuebanAdapter;
 import adapter.MyZhoubianAdapter;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -21,11 +22,13 @@ import classify.Trend;
 import classify.Zhoubian;
 
 import com.example.travel.R;
+import com.zhengshaopeng.travel.FaYueBan;
+import com.zhengshaopeng.travel.YueBan;
 
 public class YuebanFragment extends Fragment{
 	ListView listview_guan,listview_zui,listview_fujin;
 	LinearLayout linear_guanzhu,layout_guanzhu,linear_zuixin,layout_zuixin,linear_fujin,layout_fujin;
-	TextView text_guanzhu,text_zuixin,text_fujin;
+	TextView text_guanzhu,text_zuixin,text_fujin,fabu,fayueban;
 	View view_guanzhu,view_zuixin,view_fujin;
 	@SuppressWarnings("static-access")
 	@SuppressLint({ "InflateParams", "CutPasteId" })
@@ -58,6 +61,30 @@ public class YuebanFragment extends Fragment{
 		view_zuixin=(View)v.findViewById(R.id.view_xian2);
 		text_fujin=(TextView)v.findViewById(R.id.textview_fujin);
 		view_fujin=(View)v.findViewById(R.id.view_xian3);
+		fabu=(TextView)v.findViewById(R.id.fabu);
+		fabu.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent=new Intent(getActivity(),YueBan.class);
+				startActivity(intent);
+			}
+
+			
+		});
+		fayueban=(TextView)v.findViewById(R.id.fayueban);
+		fayueban.setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent=new Intent(getActivity(),FaYueBan.class);
+				startActivity(intent);
+			}
+
+			
+		});
 		return v;
 	}
 	OnClickListener clickListener=new OnClickListener() {

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/head" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@id/head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/NiCheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buwang"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="#A6A6A6"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shuoshuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="@dimen/fifteenDP"
+        android:lineSpacingExtra="7dp"
+        android:text="我向往的爱情，不是浅薄的被表面相互吸引，因为喜欢才对对方好；我向往的爱情，是明白对方的好，才相对对方好。我向往的爱情，是相知才是相爱"
+        android:textColor="@color/qianhei"
+        android:textScaleX="0.96"
+        android:textSize="16sp" />
+    <!-- 景色图片 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fifteenDP" >
+
+        <ImageView
+            android:id="@+id/fengjing1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fengjing1" />
+
+        <ImageView
+            android:id="@+id/fengjing2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tenDP"
+            android:src="@drawable/fengjing2" />
+    </LinearLayout>
+    <!-- 标签 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tenDP" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/biaoqian"
+            android:textColor="@color/qianhei" />
+
+        <TextView
+            android:id="@+id/women"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/twentyDP"
+            android:layout_marginStart="@dimen/tenDP"
+            android:background="@drawable/smallrectangle"
+            android:gravity="center"
+            android:text="@string/woman"
+            android:textColor="@color/qianhei" />
+
+        <TextView
+            android:id="@+id/CQ"
+            android:layout_width="65dp"
+            android:layout_height="@dimen/twentyDP"
+            android:layout_marginStart="@dimen/sevenDP"
+            android:background="@drawable/smallrectangle"
+            android:gravity="center"
+            android:text="@string/CQ"
+            android:textColor="@color/qianhei" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="65dp"
+            android:layout_height="@dimen/twentyDP"
+            android:layout_marginStart="@dimen/tenDP"
+            android:background="@drawable/smallrectangle"
+            android:gravity="center"
+            android:text="18岁"
+            android:textColor="@color/qianhei" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentyDP"
+        android:layout_marginTop="@dimen/twentyDP" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fifteenDP"
+            android:src="@drawable/dingwei" />
+
+        <TextView
+            android:id="@+id/zuobiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/sevenDP"
+            android:text="海口市琼台师范高等专科学校"
+            android:textColor="@color/qianhui"
+            android:textSize="@dimen/elevenSP" />
+    </LinearLayout>
+
+</LinearLayout>

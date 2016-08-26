@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/HuangSe"
+    android:orientation="vertical" >
+
+    <!-- 顶栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#01B6BD" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/yueban"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <!-- spinner -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirtyDP"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/diqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fifteenSP"
+            android:text="@string/diqu"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fifteenSP" />
+
+        <TextView
+            android:id="@+id/xingbie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fortyfourDP"
+            android:layout_toEndOf="@id/diqu"
+            android:text="@string/xingbie"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fifteenSP" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fortyfourDP"
+            android:layout_toEndOf="@id/xingbie"
+            android:text="@string/time"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fifteenSP" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/fortyfourDP"
+            android:layout_toEndOf="@id/time"
+            android:text="@string/age"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fifteenSP" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/fifteenSP"
+            android:text="@string/jiage"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fifteenSP" />
+    </RelativeLayout>
+    <!--  -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+        
+
+            <ListView
+                android:id="@+id/yueban_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/tenDP"
+                android:dividerHeight="@dimen/tenDP"/>
+       
+
+       
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -11,6 +11,16 @@
         android:background="@color/baolan" >
 
         <TextView
+            android:id="@+id/fayueban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="发约伴"
+            android:textColor="@color/baise"
+            android:textSize="20sp" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -20,6 +30,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/fabu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -71,8 +82,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="5dp"
-                android:text="最新" 
-                android:textColor="@color/heise"/>
+                android:text="最新"
+                android:textColor="@color/heise" />
 
             <View
                 android:id="@+id/view_xian2"
@@ -94,8 +105,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="5dp"
-                android:text="附近" 
-                android:textColor="@color/heise"/>
+                android:text="附近"
+                android:textColor="@color/heise" />
 
             <View
                 android:id="@+id/view_xian3"
@@ -116,8 +127,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
-	 <LinearLayout
-	     android:id="@+id/linearlayout_zuixin"
+
+    <LinearLayout
+        android:id="@+id/linearlayout_zuixin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -127,8 +139,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
     <LinearLayout
-	     android:id="@+id/linearlayout_fujin"
+        android:id="@+id/linearlayout_fujin"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -138,4 +151,5 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
 </LinearLayout>
